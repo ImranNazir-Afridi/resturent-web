@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Contact</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .section{
+            text-align: center;
+            margin-bottom: 80px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }    
+        .contact{
+            padding: 25px 0 25px 0;
+        }
+        .contact-row{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0 100px 0 100px;
+            flex-wrap: wrap;
+        }
+        .contact-col{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex: 1;
+        }
+        .contact-col p,H3{
+            font-weight: bold;
+            color: #242020;
+            margin: 10px;
+        }
+        h3{
+            color: #fff;
+            border: magenta;
+            background-color: rgb(176, 153, 176);
+            margin: auto;
+            padding: 10px;
+            text-align: center;
+        }
+        h3:hover{
+            cursor: pointer;
+            background-color: magenta;
+        }
+        .contact-col p a{
+            text-decoration: none;
+            color: #242020;
+        }
+        .contact-col p i span{
+            font-size: 1.5rem;
+            color: magenta;
+            font-family: cursive;
+        }
+        .contact-col form{
+            display: flex;
+            flex-direction: column;
+            background-color: magenta;
+            width: 70%;
+            padding: 20px 40px 20px 20px;
+        }
+        .contact-col h2{
+            text-align: center;
+            font-family: cursive;
+        }
+    .contact-col form input{
+        width: 100%;
+        height: 17pt;
+        padding: 5px;
+        margin: 5px;
+    }
+    .contact-col form textarea{
+        width: 100%;
+        padding: 5px;
+        margin: 5px;
+    }
+    .contact-col form button{
+        margin: auto;
+        padding: 10px ;
+        color: #fff;
+        background-color: orange;
+        border: 1px solid orange;
+        
+    }
+    .contact-col form button:hover{
+        cursor: pointer;
+        background-color: red;  
+    }
+    a span{
+            font-size: 1.5rem;
+            border: 2px solid rgb(225, 207, 207);
+            background-color: rgb(223, 206, 206);
+        }
+        a span:hover{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="contact">
+        <h1 class="section">Contact</h1>
+        <div class="contact-row">
+            <div class="contact-col">
+                <div>
+                    <h3>Contact Now</h3>
+                    <p>
+                        <i class="fa fa-map-marker"><span>Location:</span> </i>
+                        Peshawar, Distric Khyber,Bara
+                    </p>
+                    <p>
+                        <a href="mailto: ImranNazir@gmail.com">
+                            <i class="fa fa-envelope"><span>Email:</span></i>
+                            ImranNazir@gmail.com
+                        </a>
+                    </p>
+                    <p>
+                         <a href="tel:+13123453234">
+                            <i class="fa fa-phone-square"><span>Phone:</span></i>
+                            +13123453234
+                         </a>   
+                        </i>
+                    </p>
+                    
+                </div>
+            </div>
+            <div class="contact-col">
+                <form action="">
+                    <h2>Get in touch</h2>
+                    <input type="text" placeholder="Name">
+                    <input type="text" placeholder="Email">
+                    <input type="text" placeholder="Subject">
+                    <textarea rows="6" placeholder="Type Message" id="">
+                    </textarea>
+                    <button>Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <a href="index.html"><span>GO Back</span></a>
+</body>
+</html>
